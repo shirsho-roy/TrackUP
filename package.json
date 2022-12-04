@@ -1,5 +1,6 @@
 {
   "name": "expense-tracker",
+  "homepage": "https://shirsho-roy.github.io/TrackUP/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,8 +13,11 @@
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
+  
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -35,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
